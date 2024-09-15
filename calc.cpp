@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
 int main() {
+	setlocale(LC_ALL, "ukr");
 	int a, b, op; double result;
 	cout << "¬вед≥ть перше число\n"; cin >> a;
-	cout << "¬вед≥ть оператор\n1\t+\n2\t-\n3\t*\n4\t/\n\n"; cin
+	cout << "¬вед≥ть оператор\n1\t+\n2\t-\n3\t*\n4\t/\n5\t^\n"; cin
 		>> op;
 	cout << "¬вед≥ть друге число\n"; cin >> b;
 	switch (op) {
