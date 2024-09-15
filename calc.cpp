@@ -16,7 +16,8 @@ int main() {
 	case 3:
 		result = a * b;
 		break;
-	case 4: // code
+	case 4:
+		result = (double)a / b;
 		break;
 	}
 	cout << "Результат = " << result;
