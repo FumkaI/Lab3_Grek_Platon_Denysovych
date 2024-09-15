@@ -7,7 +7,8 @@ int main() {
 		>> op;
 	cout << "¬вед≥ть друге число\n"; cin >> b;
 	switch (op) {
-	case 1: // code
+	case 1:
+		result = a + b;
 		break;
 	case 2: // code
 		break;
