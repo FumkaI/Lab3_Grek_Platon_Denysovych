@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        /* Стилі для сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Заголовок */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        /* Контейнер альбому */
+        .album {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Стилі для кожного фото */
+        .photo {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Ефекти при наведенні на фото */
+        .photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Підписи під фото */
+        .caption {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photo Album</h1>
+
+    <!-- Контейнер для фотоальбому -->
+    <div class="album">
+        <!-- Кожен елемент фото -->
+        <div class="photo">
+            <img src="relax.jpg" alt="Photo 1">
+            <div class="caption">Photo 1</div>
+        </div>
+
+        <div class="photo">
+            <img src="cook.jpg" alt="Photo 2">
+            <div class="caption">Photo 2</div>
+        </div>
+
+        <div class="photo">
+            <img src="damn.jpg" alt="Photo 3">
+            <div class="caption">Photo 3</div>
+        </div>
+
+        <div class="photo">
+            <img src="hate.jpg" alt="Photo 4">
+            <div class="caption">Photo 4</div>
+        </div>
+
+        <div class="photo">
+            <img src="laptop.jpg" alt="Photo 5">
+            <div class="caption">Photo 5</div>
+        </div>
+
+        <div class="photo">
+            <img src="ops.jpg" alt="Photo 6">
+            <div class="caption">Photo 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
